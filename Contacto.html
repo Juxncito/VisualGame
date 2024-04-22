@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - VisualGame</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="Style2.css">
+</head>
+<body>
+    
+    <header class="Color">
+        <div class="menu container Color">
+            <a href="#" class="logo">VisualGame</a>
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <img src="Img/menu.png" alt="menu" class="menu-icon">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="Productos.html">Productos</a></li>
+                    <li><a href="Contacto.html">Contacto</a></li>
+                    <li><a href="AcercaDe.html">Acerca De</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section>
+        <div class="contact_form">
+
+            <div class="formulario">      
+              <h1>Formulario de contacto</h1>
+                <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
+        
+        
+                <form>       
+        
+                    
+                        <p>
+                          <label for="nombre" class="colocar_nombre">Nombres
+                            <span class="obligatorio">*</span>
+                          </label>
+                            <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                        </p>
+
+                        <p>
+                            <label for="apellido">Apellidos
+                                <span class="obligatorio">*</span>
+                            </label>
+                            <input type="text" id="apellido" required="obligatorio" placeholder="Escribe tus apellidos">
+                        </p>
+
+                        <p>
+                          <label for="email" class="colocar_email">Email
+                            <span class="obligatorio">*</span>
+                          </label>
+                            <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                        </p>
+                    
+                        <p>
+                            <label for="nacimiento">Fecha de nacimiento
+                                <span>*</span>
+                            </label>
+                            <input type="date" id="nacimiento" required="obligatorio" placeholder="Escribe tu fecha de nacimiento">
+                        </p>
+
+                        <p>
+                            <label for="genero">Genero
+                                <span>*</span>
+                            </label>
+                            <select name="genero" id="genero" required="obligatorio">
+                                <option value="" selected="selected">- Selecciona -</option>
+                                <option value="Femenino">Femenino</option>
+                                <option value="Masculino">Masculino</option>
+                                <option value="Femenino">Prefiero no decirlo</option>
+                            </select>
+                        </p>
+
+                        <p>
+                          <label for="telefone" class="colocar_telefono">Teléfono
+                          </label>
+                            <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+                        </p>       
+                      
+                        <p>
+                          <label for="asunto" class="colocar_asunto">Asunto
+                            <span class="obligatorio">*</span>
+                          </label>
+                            <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
+                        </p>    
+                      
+                        <p>
+                          <label for="mensaje" class="colocar_mensaje">Sugerencia
+                            <span class="obligatorio">*</span>
+                          </label>                     
+                            <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu sugerencias..."></textarea> 
+                        </p>
+                        
+                        <p>
+                            <label for="horario">Selecciona un Horario Disponible Para Ti
+                                <span>*</span>
+                            </label>
+                            <select name="horario" id="horario" required="obligatorio" >
+                                <option value="" selected="selected">- Selecciona -</option>
+                                <option value="Manana">Mañana</option>
+                                <option value="Tarde">Tarde</option>
+                                <option value="Noche">Noche</option>
+                                <option value="FinSemana">Fin de Semana</option>
+                            </select>
+                        </p>
+                      
+                        <button onclick="mostrar" type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+                        <button type="reset" name="Limpiar" id="limpiar"> <p>Limpiar</p> </button>
+                        <p class="aviso">
+                          <span class="obligatorio"> * </span>los campos son obligatorios.
+                        </p>          
+                    
+                  </form>
+            </div>  
+        </div>
+        
+    </section>
+
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+            <h3>VisualGame</h3>
+
+            <p class="footer-links">
+                <a href="index.html">Inicio</a>
+                |
+                <a href="Contacto.html">Contacto</a>
+                |
+                <a href="Productos.html">Productos</a>
+                |
+                <a href="AcercaDe.html">Acerca De</a>
+            </p>
+
+            <p class="footer-company-name">Copyright © 2024 <strong>VisualGame</strong> All rights reserved</p>
+        </div>
+
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marker"><a href="#"><img src="Img/marcador-de-alfiler.png" alt=""></a></i>
+                <p><span>Medellin</span>
+                Colombia</p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"><a href="#"><img src="Img/telefono.png" alt=""></a></i>
+                <p>+91 74**9**258</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"><img src="Img/email.png" alt=""></i>
+                <p><a href="#">info@visualgame.com</a></p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>Redes Sociales</span>
+            </p>
+            <div class="footer-icons">
+                <a href="#"><i class="fa fa-facebook"><img src="Img/facebook.png" alt=""></i></a>
+                <a href="#"><i class="fa fa-instagram"><img src="Img/instagram.png" alt=""></i></a>
+                <a href="#"><i class="fa fa-linkedin"><img src="Img/twitter.png" alt=""></i></a>
+                <a href="#"><i class="fa fa-twitter"><img src="Img/discord.png" alt=""></i></a>
+                
+            </div>
+        </div>
+    </footer>
+
+    <script src="Script.js"></script>
+</body>
+</html>
